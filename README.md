@@ -1,5 +1,5 @@
 # Whisper-ML
-Whisper ML algorithms
+Whisper Machine (Deep) Learning algorithms
 Provided by : 
 LPC2E - Laboratoire de Physique et Chimie de l'Environnement et de l'Espace (CNRS, Université d'Orléans, CNES)
 
@@ -9,7 +9,7 @@ LPC2E - Laboratoire de Physique et Chimie de l'Environnement et de l'Espace (CNR
 * [Setup](#setup)
 
 ## General info
-This project is a repo for the code associated with the scientific publication by Valliere et al.,"XXX*" on journal "XXX".
+This project is the repo for the code associated with the scientific publication by Valliere et al.,"XXX*" on journal "XXX".
 * 
 
 ## Technologies

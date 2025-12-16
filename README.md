@@ -11,10 +11,10 @@ This project is a repo for the code associated with the scientific publication b
 
 ## Technologies
 This is created with:
-  PYTHON, programming language
-  CEFLIB, the python version to handle CLUSTER spacecraft data:
+  #PYTHON, programming language
+  #CEFLIB, the python version to handle CLUSTER spacecraft data:
   https://ceflib.irap.omp.eu/
-  KERAS, deep learning API 
+  #KERAS, deep learning API 
   https://keras.io/
 
 ## Setup

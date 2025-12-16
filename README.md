@@ -1,5 +1,10 @@
 # Whisper-ML
 Whisper ML algorithms
+Provided by : 
+LPC2E - Laboratoire de Physique et Chimie de l'Environnement et de l'Espace
+  CNRS 
+  Université D'Orléans
+  CNES
 
 ## Table of contents
 * [General info](#general-info)
@@ -7,7 +12,8 @@ Whisper ML algorithms
 * [Setup](#setup)
 
 ## General info
-This project is a repo for the code associated with the scientific publication by Valliere et al.,"XXX" on journal "XXX".
+This project is a repo for the code associated with the scientific publication by Valliere et al.,"XXX*" on journal "XXX".
+* 
 
 ## Technologies
 This is created with:

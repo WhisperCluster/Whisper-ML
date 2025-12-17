@@ -80,7 +80,7 @@ history = model.fit(x_train,y_train, epochs = 100, batch_size = 32, validation_s
 # Test on data from another day
 data = {}
 # Read the Active Data with CEFLIB
-status = ceflib.read("/home/natural_pipeline/archive_github/data_test/C3_CP_WHI_ACTIVE__20200101_000000_20200102_000000_V200704.cef")
+status = ceflib.read(test_active_path)
 # Get the date from the Active file as datetime
 data['date_act']= [np.datetime64(datetime.utcfromtimestamp(ceflib.milli_to_timestamp(i)))for i in ceflib.var("time_tags")].copy()
 # Get the whisper Active spectra
@@ -89,7 +89,7 @@ data['sptr_act'] = ceflib.var('Electric_Spectral_Power_Density').copy()
 data['freq'] = ceflib.var("Spectral_Frequencies").copy()
 
 # Read the electron density with CEFLIB
-status = ceflib.read()
+status = ceflib.read(test_electron_path)
 data['date_dens']= [np.datetime64(datetime.utcfromtimestamp(ceflib.milli_to_timestamp(i)))for i in ceflib.var("time_tags")].copy()
 data['Electron_Density'] = ceflib.var('Electron_Density').copy()
 

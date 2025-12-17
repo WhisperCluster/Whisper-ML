@@ -25,11 +25,11 @@ import matplotlib.pyplot as plt
 random.seed(7)
 
 # Filepahts
-train_active_path ="./data/C3_CP_WHI_ACTIVE__20180401_000000_20180403_000000_V180621.cef"
-train_electron_path="./data/C3_CP_WHI_ELECTRON_DENSITY__20180401_000000_20180403_000000_V190504.cef"
+train_active_path ="../data_test/C3_CP_WHI_ACTIVE__20180401_000000_20180403_000000_V180621.cef"
+train_electron_path="../data_test/C3_CP_WHI_ELECTRON_DENSITY__20180401_000000_20180403_000000_V190504.cef"
 
-test_active_path="./data/C3_CP_WHI_ACTIVE__20200101_000000_20200102_000000_V200704.cef"
-test_electron_path="./data/C3_CP_WHI_ELECTRON_DENSITY__20200101_000000_20200102_000000_V210204.cef"
+test_active_path="../data_test/C3_CP_WHI_ACTIVE__20200101_000000_20200102_000000_V200704.cef"
+test_electron_path="../data_test/C3_CP_WHI_ELECTRON_DENSITY__20200101_000000_20200102_000000_V210204.cef"
 
 # Read the Active Data
 data={}
@@ -99,17 +99,18 @@ data['sptr_act'] = data['sptr_act'][:,13:493]
 
 # Reshape the data for GRU Model
 x = data['sptr_act'].reshape(-1,1,480)   
-# Classify with the GRU Model    
+# Classify with the GRU Model
 classification = model.predict(x)
-# Get the real fpe and the predicted Fpe 
+# Get the real fpe and the predicted Fpe
 real_fpe = preprocessing.calc_fpe_dens(data['Electron_Density'])
 predicted_fpe = [data['freq'][np.argmax(p)] for p in classification]
 
-
 # Plot the results of prediction
-plt.plot(real_fpe)
-plt.plot(predicted_fpe)
-plt.savefig('result.png')
+plt.subplots(figsize=(20, 4))
+plt.plot(data['date_dens'],real_fpe, label = "fpe")
+plt.plot(data['date_act'],predicted_fpe, label = "predicted fpe")
+plt.legend()
+plt.savefig('result_fp.png')
 
 # NOTE : Results will not be optimal has the trainning dataset 
-# needs to be ~500k -1M points and have a good distribution
+# needs to be ~500k -1M sp and have a good distribution

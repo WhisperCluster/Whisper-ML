@@ -4,7 +4,7 @@
 - **Provided by:**  
 **LPC2E** – *Laboratoire de Physique et Chimie de l’Environnement et de l’Espace*  
 (CNRS, Université d’Orléans, CNES)
-- **Authors**: Emmanuel DE LEON, Maxime Vandevoorde, Nicolas Gilet, Xavier Vallières
+- **Authors**: Emmanuel De Leon, Maxime Vandevoorde, Nicolas Gilet, Xavier Vallières
 
 ## Table of contents
 - [General Information](#general-information)
@@ -28,7 +28,7 @@ WHISPER data are publicly available via the **ESA Cluster Science Archive (CSA)*
 https://csa.esac.esa.int/csa-web/#search
 
 A **demo dataset** is provided for testing and demonstration purposes.
-Link ZENODO
+> Link ZENODO
 
 ## Technologies
 This project is developed using the following technologies:

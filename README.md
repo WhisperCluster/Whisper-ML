@@ -42,10 +42,11 @@ This project is developed using the following technologies:
 
 ## Setup
 To install this project:
-  1. **Install CEFLIB (Python version)**  version https://ceflib.irap.omp.eu/page=install 
+  1. **Install Python** 3.10 (This version has been tested with the current code.)
+  2. **Install CEFLIB (Python version)**  version https://ceflib.irap.omp.eu/page=install 
       > ⚠️ CEFLIB is intended to run on **Linux distributions**.  
       > Windows builds are possible but require additional configuration.
-  2. **Install Python** 3.10 (This version has been tested with the current code.)
+  
   3. **Install Python dependencies**
 ```bash
 pip install -r requirements.txt

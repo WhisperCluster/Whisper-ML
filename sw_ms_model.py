@@ -132,10 +132,14 @@ for i in range(0,len(data['sptr_act'])):
 proba = model.predict(data['sptr'])
 
 # Plot the results of prediction
-plt.subplots(figsize=(20, 4))
-plt.plot(data['date_act'],proba)
+plt.subplots(figsize=(18, 4))
+plt.title("Region prediction probability")
+plt.plot(data['date_act'],proba[:,0],label ="Other")
+plt.plot(data['date_act'],proba[:,1],label ="Magnetosheath")
+plt.plot(data['date_act'],proba[:,2],label ="Solar Wind")  
+plt.legend() 
 plt.savefig('result_region.png')
 
 
-# NOTE : Results will not be optimal has the trainning dataset 
+# NOTE : Results will not be optimal as the training dataset 
 # needs to be ~500k sp and have a good distribution

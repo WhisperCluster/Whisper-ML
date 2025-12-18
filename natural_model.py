@@ -56,11 +56,12 @@ y=to_categorical(y, num_classes=2)
 # Split the train and test datasets
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.1)
 
-# Compiling PS model, Same for trainning the TL model 
+# Compiling PS model, Same for training the TL model 
 model = models.compile_ps_model_natural()
+#model = models.compile_tl_model_natural()
 
-# Train the de model 
-history=model.fit(x_train, y_train, epochs=5, batch_size=16,validation_split=0.05)
+# Train the model 
+history=model.fit(x_train, y_train, epochs=32, batch_size=16,validation_split=0.05)
 
 # Test the model on another day
 data={}
@@ -84,10 +85,11 @@ data['sptr_nat'] = data['sptr_nat'][:, 14:484]
 proba = model.predict(data['sptr_nat'])
 
 # Plot the results of prediction
-plt.subplots(figsize=(20, 4))
-plt.plot(data['date_nat'],proba[:,0])
+plt.title("Natural Model Region Probability")
+plt.subplots(figsize=(18, 4))
+plt.plot(data['date_nat'],proba[:,0],label="predicted")
 plt.savefig('result_natural.png')
 
 
-# NOTE : Results will not be optimal has the trainning dataset 
+# NOTE : Results will not be optimal as the training dataset 
 # needs to be ~500k sp and have a good distribution

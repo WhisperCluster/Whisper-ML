@@ -24,7 +24,7 @@ import matplotlib.pyplot as plt
 # Fix random seed 
 random.seed(7)
 
-# Filepahts
+# Filepaths
 train_active_path ="../data_test/C3_CP_WHI_ACTIVE__20180401_000000_20180403_000000_V180621.cef"
 train_electron_path="../data_test/C3_CP_WHI_ELECTRON_DENSITY__20180401_000000_20180403_000000_V190504.cef"
 
@@ -106,11 +106,13 @@ real_fpe = preprocessing.calc_fpe_dens(data['Electron_Density'])
 predicted_fpe = [data['freq'][np.argmax(p)] for p in classification]
 
 # Plot the results of prediction
-plt.subplots(figsize=(20, 4))
+plt.subplots(figsize=(18, 4))
+plt.title("Predicted Plasma Frequency vs Plasma Frequency")
 plt.plot(data['date_dens'],real_fpe, label = "fpe")
 plt.plot(data['date_act'],predicted_fpe, label = "predicted fpe")
+plt.ylabel("Frequency [Khz]")
 plt.legend()
 plt.savefig('result_fp.png')
 
-# NOTE : Results will not be optimal has the trainning dataset 
+# NOTE : Results will not be optimal as the training dataset 
 # needs to be ~500k -1M sp and have a good distribution

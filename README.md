@@ -1,10 +1,10 @@
 # Whisper-ML
 
 **Whisper-ML** is a collection of Machine Learning and Deep Learning algorithms developed for the analysis of **WHISPER** instrument data from the **CLUSTER** mission
-**Provided by:**  
+- **Provided by:**  
 **LPC2E** – *Laboratoire de Physique et Chimie de l’Environnement et de l’Espace*  
 (CNRS, Université d’Orléans, CNES)
-**Authors**: Emmanuel DE LEON, Maxime Vandevoorde, Nicolas Gilet, Xavier Vallières
+- **Authors**: Emmanuel DE LEON, Maxime Vandevoorde, Nicolas Gilet, Xavier Vallières
 
 ## Table of contents
 - [General Information](#general-information)
@@ -67,8 +67,10 @@ pip install -r requirements.txt
  4. Run one of the example models
 ```bash
 python natural_model.py
-
+```
+```bash
 python fp_model.py
-
+```
+```bash
 python sw_ms_model.py
 ```

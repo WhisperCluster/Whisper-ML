@@ -1,10 +1,13 @@
 # Whisper-ML
 
-**Whisper-ML** is a collection of Machine Learning and Deep Learning algorithms developed for the analysis of **WHISPER** instrument data from the **CLUSTER** mission
+**Whisper-ML** is a collection of Machine Learning and Deep Learning algorithms developed for the analysis of **WHISPER** instrument (Décréau et al.) data from the **CLUSTER** mission (Escoubet el al.)
 - **Provided by:**  
-**LPC2E** – *Laboratoire de Physique et Chimie de l’Environnement et de l’Espace*  
-(CNRS, Université d’Orléans, CNES)
+**LPC2E** – Laboratoire de Physique et Chimie de l’Environnement et de l’Espace
+(LPC2E, OSUC, Univ Orleans, CNRS, CNES, F-45071 Orleans, France)
 - **Authors**: Emmanuel De Leon, Maxime Vandevoorde, Nicolas Gilet, Xavier Vallières
+
+*Décréau 🡪 lien vers https://doi.org/10.1023/A:1004931326404
+*Escoubet 🡪 lien vers https://doi.org/10.1023/A:1004923124586
 
 ## Table of contents
 - [General Information](#general-information)
@@ -24,11 +27,11 @@ The code implements Machine Learning models designed to process and analyze data
 
 ## Data Availability
 
-WHISPER data are publicly available via the **ESA Cluster Science Archive (CSA)**:
-https://csa.esac.esa.int/csa-web/#search
+All Cluster data, including the WHISPER electric field spectra and the thermal electron density dataset is public and available at the ESA Cluster Science Archive (CSA) (https://csa.esac.esa.int)
+DOI for WHISPER key science datasets at CSA is https://doi.org/10.5270/esa-6stdo07.
 
 A **demo dataset** is provided for testing and demonstration purposes.
-> Link ZENODO
+[> Link ZENODO](https://zenodo.org/records/17977835)
 
 ## Technologies
 This project is developed using the following technologies:
@@ -54,18 +57,19 @@ pip install -r requirements.txt
 
 ## Running the Models
  1. Download the Whisper demo dataset
+  https://zenodo.org/records/17977835
     - Includes:
         * 2 days of data for training (natural, active, electron density)
         * 1 day of data for testing
 
- 2. Verify the CEFLIB installation path
+ 3. Verify the CEFLIB installation path
     - Open the model script you want to run
     - Check that the CEFLIB path is correctly set
 
- 3. Update dataset paths
+ 4. Update dataset paths
     - Edit the script to point to the local demo dataset files
 
- 4. Run one of the example models
+ 5. Run one of the example models
 ```bash
 python natural_model.py
 ```

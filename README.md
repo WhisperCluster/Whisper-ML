@@ -71,15 +71,15 @@ pip install -r requirements.txt
     - Edit the script to point to the local demo dataset files
 
  5. Run one of the example models
-Trainning and testing of a region selection model with natural data
+- Training and testing of a region selection model with natural data
 ```bash
 python natural_model.py
 ```
-Trainning and testing of a region selection model with natural and acrtive data
+- Training and testing of a region selection model with natural and acrtive data
 ```bash
 python sw_ms_model.py
 ```
-Trainning and testing a model to find the plasma frequency from acrtive data
+- Training and testing a model to find the plasma frequency from acrtive data
 ```bash
 python fp_model.py
 ```

@@ -56,7 +56,7 @@ pip install -r requirements.txt
 ```
 
 ## Running the Models
- 1. Download the Whisper demo dataset
+ 1. Download the Whisper demo dataset and uncompress Whisper-ML_demo_dataset.tar.gz
   https://zenodo.org/records/17977835
     - Includes:
         * 2 days of data for training (natural, active, electron density)

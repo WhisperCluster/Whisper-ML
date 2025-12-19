@@ -6,8 +6,8 @@
 (LPC2E, OSUC, Univ Orleans, CNRS, CNES, F-45071 Orleans, France)
 - **Authors**: Emmanuel De Leon, Maxime Vandevoorde, Nicolas Gilet, Xavier Vallières
 
-*Décréau 🡪 lien vers https://doi.org/10.1023/A:1004931326404
-*Escoubet 🡪 lien vers https://doi.org/10.1023/A:1004923124586
+*Décréau et al.  https://doi.org/10.1023/A:1004931326404
+*Escoubet et al. vers https://doi.org/10.1023/A:1004923124586
 
 ## Table of contents
 - [General Information](#general-information)

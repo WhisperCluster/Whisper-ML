@@ -33,6 +33,7 @@ DOI for WHISPER key science datasets at CSA is https://doi.org/10.5270/esa-6stdo
 A **demo dataset** is provided for testing and demonstration purposes.
 [> Link ZENODO](https://zenodo.org/records/17977835)
 
+
 ## Technologies
 This project is developed using the following technologies:
 
@@ -70,12 +71,17 @@ pip install -r requirements.txt
     - Edit the script to point to the local demo dataset files
 
  5. Run one of the example models
+Trainning and testing of a region selection model with natural data
 ```bash
 python natural_model.py
 ```
-```bash
-python fp_model.py
-```
+Trainning and testing of a region selection model with natural and acrtive data
 ```bash
 python sw_ms_model.py
 ```
+Trainning and testing a model to find the plasma frequency from acrtive data
+```bash
+python fp_model.py
+```
+
+The result obtained (plot image) by running the demo scripts is available in the zenodo archive in the folder Whisper-ML_results.tar.gz
